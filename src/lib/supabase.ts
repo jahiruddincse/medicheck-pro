@@ -4,7 +4,7 @@ import { initialDemoHistory } from '../data/medicineDb';
 
 // Supabase configuration provided by the user
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://uqwezrrkaiduumhtpltj.supabase.co';
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'your-supabase-anon-key';
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
 export const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {
