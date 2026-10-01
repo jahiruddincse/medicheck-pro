@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  font-family: 'Inter', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #040906;
+  color: #e6f4ec;
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 229, 153, 0.12) 0%, transparent 60%),
+    linear-gradient(to right, rgba(0, 229, 153, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 229, 153, 0.035) 1px, transparent 1px);
+  background-size: 100% 100%, 36px 36px, 36px 36px;
+}
+
+/* Minimalist scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 229, 153, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 229, 153, 0.4);
+}
+
+/* Neon laser scanning line for camera lens */
+@keyframes scanning-laser {
+  0% {
+    top: 4%;
+    opacity: 0.95;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 94%;
+    opacity: 0.35;
+  }
+}
+
+.animate-scan-lens {
+  animation: scanning-laser 2.2s ease-in-out infinite alternate;
+}
+
+/* Radar pulse */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.98);
+    opacity: 0.8;
+  }
+}
+
+.animate-pulse-lens {
+  animation: radar-pulse 3s ease-in-out infinite;
+}
+
+/* ZeBeyond / BeMinimalist design cards matching image.png */
+.tech-card {
+  background: rgba(10, 22, 16, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 229, 153, 0.18);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.tech-card:hover {
+  border-color: rgba(0, 229, 153, 0.32);
+}
+
+.tech-button-mint {
+  background: #00e599;
+  color: #040906;
+  font-weight: 700;
+  box-shadow: 0 0 25px rgba(0, 229, 153, 0.35);
+  transition: all 0.2s ease;
+}
+
+.tech-button-mint:hover {
+  background: #1affaa;
+  box-shadow: 0 0 35px rgba(0, 229, 153, 0.55);
+}
+
+.font-minimal {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.015em;
+}
+
+.font-mono-tag {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: -0.02em;
+}

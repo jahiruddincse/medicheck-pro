@@ -1,0 +1,11 @@
+{
+  "name": "MediCheck — Intelligent Medicine Verification & Substitute Intelligence",
+  "description": "Scan any medicine to verify authenticity, detect active pharmaceutical salts, calculate cheaper bioequivalent substitutes, and share verified history with physicians.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
+
